@@ -1,0 +1,22 @@
+{
+  "name": "crypto-emojis",
+  "version": "1.0.0",
+  "description": "Emojis as crypto collectibles!",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nishant Joywardhan",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "chai": "^4.3.4",
+    "truffle-flattener": "^1.5.0"
+  }
+}
