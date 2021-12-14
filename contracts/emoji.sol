@@ -10,7 +10,7 @@ contract emoji is ERC721, ERC721Enumerable {
     mapping(string => bool) _emojiExists;
     
     // basically specifying the inital name and symbol for the token
-    constructor() ERC721("crypto-emoji", "CEMOJI") {
+    constructor() ERC721("crypto-emoji", "CEMOJI") public {
     }
     
     // Open Zeppelin's contracts overridden
