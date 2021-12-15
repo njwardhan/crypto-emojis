@@ -10,7 +10,7 @@ contract emoji is ERC721, ERC721Enumerable {
     mapping(string => bool) _emojiExists;
     
     // basically specifying the inital name and symbol for the token
-    constructor() ERC721("crypto-emoji", "CEMOJI") public {
+    constructor() ERC721("crypto-emoji", "CEMOJI") {
     }
     
     // Open Zeppelin's contracts overridden
@@ -32,7 +32,7 @@ contract emoji is ERC721, ERC721Enumerable {
 
     // Keeping this function public allows anyone to call the mint function. 
     // However in real projects, the minter roles are specific ..
-    function mint(string memory _emoji) public {
+    function mint(string memory _emoji) public payable {
         // Require unique emoji
         require(!_emojiExists[_emoji]);
         
