@@ -13,24 +13,29 @@
 <body>
     <div id="flex-one">
         <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1", style="font:bold">CRYPTO EMOJIS</span>
-            <span id="accountAddress", class="navbar-brand mb-0 h1"></span>
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-2 h1", style="font-weight:bold; font-size:30px">CRYPTO EMOJIS</span>
+            <span id="accountAddress", class="navbar-brand mb-2 h1"></span>
         </nav>
 
         <br>
         <center>
         <form onSubmit="App.minting(); return false;" role="form">
-            <label>Enter emoji hexcode</label><br>
-            <input id="hex" , type="text" name="hexcode"><br><br>
+            <label style="font-weight:bold; font-size:35px">Enter emoji hexcode:</label><br><br>
+            <input id="hex" , type="text" name="hexcode", placeholder="For Eg: &#x1F62A;"><br><br>
             <span class="input-group-btn">
-                <button type="submit" class="btn btn-primary btn-lg" ;">Mint Token</button>
+                <button type="submit" class="btn btn-primary btn-lg";>Mint Token</button>
             </span>
         </form>
         </center>
     </div>
 
-    <div id="flex-two"></div>
+    <hr><br>
+
+    <div id="flex-two">
+        <div id="emoji-display"></div>
+        <div id="id"></div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

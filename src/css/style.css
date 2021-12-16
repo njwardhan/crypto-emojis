@@ -4,14 +4,14 @@ body {
 }
 
 #flex-one {
-    border: 10px solid black;
-    margin: 10px;   
+    /* border: 10px solid black; */
+    /* margin: 10px;    */
     height:50%;
 }
 
 #flex-two {
-    border: 10px solid black;
-    margin: 10px;   
+    /* border: 10px solid black; */
+    /* margin: 10px;    */
     display:flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
@@ -20,15 +20,22 @@ body {
     gap:20px;
 }
 
+/* #emoji-display { */
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* border: 2px solid black; */
+    /* margin: 2px; */
+/* } */
+
 NJW {
     /* display: flex; */
     /* flex-direction: column; */
     /* flex-direction: row; */
-    border: 2px solid black;
-    margin: 2px;
-    padding: 5px;
-    /* align-items: flex-end; */
-    /* justify-content: center; */
+    /* border: 2px solid black; */
+    /* margin: 2px; */
+    /* padding: 5px; */
+    align-items: center;
+    justify-content: center;
     /* flex-wrap: wrap; */
     font-size: 150px;
     /* height: 100vh; */
@@ -40,3 +47,7 @@ NJW {
 /* LM7 {
     font-size: 30px;
 } */
+
+#account-address {
+    font-color: white;
+}

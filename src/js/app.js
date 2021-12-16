@@ -74,8 +74,13 @@ App = {
                     
                     var emoji_elements = document.createElement("NJW");
                     emoji_elements.innerHTML = tokens;
+                
+                    // emoji_elements.innerHTML += i;
                     document.getElementById('flex-two').appendChild(emoji_elements);
-                    
+                    // document.getElementsByName('NJW').innerHTML = i;
+                    // var id = document.createElement("LM7");
+                    // id.innerHTML = i;
+                    // document.getElementsByName('NJW').innerHTML += id;
                     // var code_value = String(tokens);
                     // var code_value = document.createElement("LM7");
                     // code_value.innerHTML = $('#hex').val();
@@ -98,8 +103,8 @@ App = {
                     from: App.account,
                     gas: 500000
                 }).then(function(result){
-                    console.log("Token minted!")
                     location.reload();
+                    console.log("Token minted!")
                     return App.tokenListing();
                 })
             })
