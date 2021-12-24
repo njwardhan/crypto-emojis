@@ -28,12 +28,12 @@ body {
 /* } */
 
 NJW {
-    /* display: flex; */
+    display: flex;
     /* flex-direction: column; */
     /* flex-direction: row; */
-    /* border: 2px solid black; */
-    /* margin: 2px; */
-    /* padding: 5px; */
+    border: 2px solid rgb(95, 92, 92);
+    margin: 2px;
+    padding: 9px;
     align-items: center;
     justify-content: center;
     /* flex-wrap: wrap; */
@@ -50,4 +50,12 @@ NJW {
 
 #account-address {
     font-color: white;
+}
+
+#loader {
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

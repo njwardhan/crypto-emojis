@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div id="loader">
+        <p class="text-center">Nothing Lasts Forever ..</p>
+    </div>
     <div id="flex-one">
         <!-- As a heading -->
         <nav class="navbar navbar-dark bg-dark">
@@ -22,20 +25,18 @@
         <center>
         <form onSubmit="App.minting(); return false;" role="form">
             <label style="font-weight:bold; font-size:35px">Enter emoji hexcode:</label><br><br>
-            <input id="hex" , type="text" name="hexcode", placeholder="For Eg: &#x1F62A;"><br><br>
+            <input id="hex" , type="text" name="hexcode"><br><br>
             <span class="input-group-btn">
                 <button type="submit" class="btn btn-primary btn-lg";>Mint Token</button>
             </span>
         </form>
         </center>
+        <hr>
     </div>
 
-    <hr><br>
+    <br>
 
-    <div id="flex-two">
-        <div id="emoji-display"></div>
-        <div id="id"></div>
-    </div>
+    <div id="flex-two"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
