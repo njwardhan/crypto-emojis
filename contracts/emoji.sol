@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
 contract emoji is ERC721, ERC721Enumerable {
     string[] public emojis;
-    // A mapping that checks if this colour exists
+    // A mapping that checks if this emoji exists
     mapping(string => bool) _emojiExists;
     
     // basically specifying the inital name and symbol for the token
