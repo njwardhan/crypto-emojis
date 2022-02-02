@@ -12,7 +12,7 @@
 
 <body>
     <div id="loader">
-        <p class="text-center">Nothing Lasts Forever ..</p>
+        <p class="text-center">...</p>
     </div>
     <div id="flex-one">
         <!-- As a heading -->
@@ -24,8 +24,11 @@
         <br>
         <center>
         <form onSubmit="App.minting(); return false;" role="form">
-            <label style="font-weight:bold; font-size:35px">Enter emoji hexcode:</label><br><br>
-        <input id="hex" , type="text" name="hexcode", pattern="(&#x[A-Z0-9]{4,5};){1,7}"><br><br>
+            <label style="font-weight:bold; font-size:35px">Enter emoji hexcodes:</label><br><br>
+            <div>Upto 7 hexcodes accepted per token (without any separating whitespace)</div>
+            <a style="text-decoration:none" href="https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm">Hexcode Reference</a>
+            <br><br>
+            <input id="hex" , type="text" name="hexcode", pattern="(&#x[A-Z0-9]{4,5};){1,7}"><br><br>
             <span class="input-group-btn">
                 <button type="submit" class="btn btn-primary btn-lg";>Mint Token</button>
             </span>

@@ -13,12 +13,15 @@
   "author": "Nishant Joywardhan",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "truffle-hdwallet-provider": "^1.0.6"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.0",
+    "@truffle/hdwallet-provider": "^2.0.0",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
+    "dotenv": "^15.0.0",
     "truffle-flattener": "^1.5.0"
   }
 }
