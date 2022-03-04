@@ -97,16 +97,6 @@ App = {
 
                     // emoji_elements.innerHTML += i;
                     document.getElementById('flex-two').appendChild(emoji_elements);
-                    // document.getElementsByName('NJW').innerHTML = i;
-                    // var id = document.createElement("LM7");
-                    // id.innerHTML = i;
-                    // document.getElementsByName('NJW').innerHTML += id;
-                    // var code_value = String(tokens);
-                    // var code_value = document.createElement("LM7");
-                    // code_value.innerHTML = $('#hex').val();
-                    // document.getElementById('emoji-display').appendChild(code_value);
-                    // document.getElementById('flex-two').appendChild(hex_value);
-                    // document.getElementById("emoji-display").innerHTML += emoji_elements;
                 }
             })
         })
