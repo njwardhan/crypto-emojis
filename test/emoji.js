@@ -1,18 +1,13 @@
-const { assert } = require('chai')
+// Without making use of the Chai libraray
 
-const emoji = artifacts.require('./emoji.sol')
+const emoji = artifacts.require('emoji');
 
-require('chai')
-    .use(require('chai-as-promised'))
-    .should()
-
-contract('emoji' , (accounts) => {
-
-    let contract
-
+contract('emoji' , function(accounts) {
+    let contract;
     before(async () => {
         contract = await emoji.deployed();
-    })
+    });
+
 
     describe('deployment', async () => {
         it('deploys successfully', async () => {
@@ -22,19 +17,21 @@ contract('emoji' , (accounts) => {
             assert.notEqual(address, 0x0)
             assert.notEqual(address, null)
             assert.notEqual(address, undefined)
-        })
+        });
 
         it('has a proper name', async () => {
             const name = await contract.name();
             // console.log(name);
             assert.equal(name, 'crypto-emoji')
-        })
+        });
+
         it('has a defined symbol', async () => {
             const symbol = await contract.symbol();
-            // console.log(name);
+            // console.log(symbol);
             assert.equal(symbol, 'CEMOJI')
-        })
-    })
+        });
+    });
+
 
     describe('minting', async () => {
         it('creates a new emoji token', async () => {
@@ -48,9 +45,16 @@ contract('emoji' , (accounts) => {
             assert.equal(event.to, accounts[0], 'to is correct')
 
             // FAILURE: same emoji cannot be minted again
-            await contract.mint('&#x1F600;').should.be.rejected;
-        })
-    })
+            try{
+                await contract.mint('&#x1F600;');
+            } catch(error){
+                assert(error.message.includes('revert'));
+                return;
+            }
+            assert(false, 'same emoji cannot be minted again');
+        });
+    });
+
 
     describe('indexing', async () => {
         it('lists all emojis', async () => {
@@ -71,9 +75,7 @@ contract('emoji' , (accounts) => {
 
             let expected = ['&#x1F600;', '&#x1F923;', '&#x1F601;', '&#x1F602;']
             assert.equal(result.join(',') , expected.join(','))
-        })
-         
+        });
+    });
+});
 
-    })
-
-}) 
