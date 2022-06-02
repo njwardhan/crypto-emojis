@@ -4,6 +4,10 @@ This project is an implementation of [OpenZeppelin's ERC-721 token standard](htt
 
 NOTE: The tokens get minted **from** the minter's (user's) address and **to** the contract address. No further ownership transfer takes place.
 
+## Project screenshot
+
+![](crypto-emojis.png "crypto-emojis website")
+
 ## Steps to mint
 
 * Visit the project website
@@ -15,6 +19,7 @@ NOTE: The tokens get minted **from** the minter's (user's) address and **to** th
 ## To-do
 
 * Website ain't currently responsive for different screen sizes
+* Include other formats of emoji hexcodes
 * Frontend can be bettered (loop display takes time)
 * Mainnet deployment with a proper project format
 
