@@ -23,5 +23,9 @@ NOTE: The tokens get minted **from** the minter's (user's) address and **to** th
 * Frontend can be bettered (loop display takes time)
 * Mainnet deployment with a proper project format
 
+<hr>
+
+The NFT collection also has a preview availabe on the Testnet Opensea: https://testnets.opensea.io/collection/crypto-emoji
+
 
 
