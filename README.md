@@ -25,7 +25,8 @@ NOTE: The tokens get minted **from** the minter's (user's) address and **to** th
 
 <hr>
 
-The NFT collection also has a preview availabe on the Testnet Opensea: https://testnets.opensea.io/collection/crypto-emoji
+The NFT collection also has a preview availabe on the Testnet Opensea: https://testnets.opensea.io/collection/crypto-emoji <br>
+(The preview is no longer available, apparently because the Rinkeby testnet, which hosts the contract for this project is now deprecated :/)
 
 
 
