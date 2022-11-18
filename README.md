@@ -1,6 +1,6 @@
 ## About
 
-This project is an implementation of [OpenZeppelin's ERC-721 token standard](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721) that allows the user to mint emojis (or combination of emojis) as Non-Fungible Tokens (NFTs) on Ethereum's [Rinkeby test network](https://www.rinkeby.io/#stats).
+This project is an implementation of [OpenZeppelin's ERC-721 token standard](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721) that allows the user to mint emojis (or combination of emojis) as Non-Fungible Tokens (NFTs) on Ethereum's [Goerli test network](https://goerli.net/).
 
 NOTE: The tokens get minted **from** the minter's (user's) address and **to** the contract address. No further ownership transfer takes place.
 
@@ -11,9 +11,9 @@ NOTE: The tokens get minted **from** the minter's (user's) address and **to** th
 ## Steps to mint
 
 * Visit the project website
-* Connect your Ethereum wallet (Metamask) to the website (make sure that the Rinkeby testnet is selected)
+* Connect your Ethereum wallet (Metamask) to the website (make sure that the Goerli testnet is selected)
 * Enter the hexcode of the emoji(s) that you'd want to mint (the hexcode reference on the site can be used)
-* Spend Rinkeby fake ethers as gas fee to complete the transaction
+* Spend Goerli fake ethers as gas fee to complete the transaction
 * See the emoji(s) come to life as an NFT!
 
 ## To-do
@@ -25,8 +25,8 @@ NOTE: The tokens get minted **from** the minter's (user's) address and **to** th
 
 <hr>
 
-The NFT collection also has a preview availabe on the Testnet Opensea: https://testnets.opensea.io/collection/crypto-emoji <br>
-(The preview is no longer available, apparently because the Rinkeby testnet, which hosts the contract for this project is now deprecated :/)
-
+- [Etherscan preview](https://goerli.etherscan.io/address/0x7855FDe3621861f58635cB76D27006d3A8D584D6)
+- [OpenSea preview](https://testnets.opensea.io/collection/crypto-emoji-v2)
+- [Rinkeby Etherscan previw](https://rinkeby.etherscan.io/address/0xcCdfC5839E27ad509264719e87b562d1Fc32B104) (old deprecated contract)
 
 
