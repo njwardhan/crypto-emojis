@@ -61,6 +61,17 @@ module.exports = {
       network_id: 4, // 4 is the number for Rinkeby
       gas: 4700000,
       timeoutBlocks: 200
+    },
+    goerli: {
+      provider: function(){
+        return new HDWalletProvider(
+          process.env.MNEMONIC,
+          `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`
+        )
+      },
+      network_id: 5, // 5 is the number for Goerli
+      gas: 5500000,
+      timeoutBlocks: 200
     }
     // Another network with more advanced options...
     // advanced: {
